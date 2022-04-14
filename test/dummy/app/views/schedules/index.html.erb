@@ -1,0 +1,11 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Schedules</h1>
+
+<%= link_to "New schedule", new_schedule_path %>
+
+<% schedules = Schedule.all.order(:start_on).pluck(:start_on, :note, :id) %>
+<% contents = schedules.map{|x| {title: link_to(x[0].strftime('%Y-%m-%d'),
+                                              schedule_path(x[2])),
+                               body: x[1]} } %>
+<%= timeline_molecules_tag(contents, DateTime.now.strftime('%Y-%m-%d')).html_safe %>
