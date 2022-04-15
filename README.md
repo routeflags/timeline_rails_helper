@@ -4,11 +4,13 @@
 [![Gem Version](https://badge.fury.io/rb/timeline_rails_helper.svg)](https://badge.fury.io/rb/jma) 
 ![](https://ruby-gem-downloads-badge.herokuapp.com/timeline_rails_helper) 
 [![Ruby Style Guide](https://img.shields.io/badge/code_style-rubocop-brightgreen.svg)](https://github.com/rubocop-hq/rubocop)
-[![CircleCI](https://circleci.com/bb/smapira/timeline_rails_helper.svg?style=svg)](https://circleci.com/bb/smapira/punch_time)
+[![CircleCI](https://circleci.com/gh/smapira/timeline_rails_helper/tree/main.svg?style=svg)](https://circleci.com/gh/smapira/timeline_rails_helper/tree/main)
 
 The TimelineRailsHelper provides a timeline_molecules_tag helper to draw a vertical time line usable with vanilla [CSS](https://codepen.io/z-/pen/bwPBjY).
 
 ## See It Work
+
+![output](https://user-images.githubusercontent.com/25024587/163623635-e0b8fdab-b8dc-4bad-b795-7631931a8acc.gif)
 
 ## Installation
 
