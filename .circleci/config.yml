@@ -8,7 +8,7 @@ jobs:
       - run:
           name: Run the test and linting
           command: |
-            gem install bundler --no-document
-            bundle install --jobs=4 --retry=3 --quiet
+            gem install bundler
+            bundle install
             bin/test
             bundle exec rubocop
