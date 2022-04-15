@@ -2,55 +2,13 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: ruby:2.6.1
-        env:
-          - name: RUBY_VERSION
-            value: 2.6.1
-          - name: RUBY_CONFIGURE_OPTS
-            value: --disable-install-doc
-          - name: RUBY_ENV
-            value: test
-          - name: RUBY_TEST_OPTS
-            value: --no-ri --no-rdoc
-          - name: RUBY_CC_OPTS
-            value: -O3
-          - name: RUBY_CFLAGS
-            value: -O3
-          - name: RUBY_LD_OPTS
-            value: -O3
-          - name: RUBY_DEBUG
-            value: false
-          - name: RUBY_GC_MALLOC_LIMIT
-            value: 8000000
-          - name: RUBY_GC_HEAP_INIT_SLOTS
-            value: 20000
-          - name: RUBY_GC_HEAP_FREE_SLOTS
-            value: 20000
-          - name: RUBY_GC_HEAP_GROWTH_FACTOR
-            value: 1
-          - name: RUBY_GC_HEAP_GROWTH_MAX_SLOTS
-            value: 20000
-          - name: RUBY_GC_HEAP_OLDOBJECT_LIMIT_FACTOR
-            value: 1
-          - name: RUBY_GC_MALLOC_LIMIT
-            value: 8000000
-          - name: RUBY_GC_MALLOC_LIMIT_MAX
-            value: 8000000
-          - name: RUBY_GC_OLDMALLOC_LIMIT
-            value: 8000000
-          - name: RUBY_GC_OLDMALLOC_LIMIT_MAX
-            value: 8000000
-          - name: RUBY_GC_MALLOC_LIMIT_GROWTH_FACTOR
-            value: 1
-          - name: RUBY_GC_MALLOC_LIMIT_GROWTH_MAX
-            value: 1
-          - name: RUBY_GC_OLDMALLOC
+      - image: ruby:3.1.0
     steps:
       - checkout
       - run:
           name: Run the test and linting
           command: |
-            gem install bundler --no-document
-            bundle install --jobs=4 --retry=3 --quiet
+            gem install bundler
+            bundle install
             bin/test
             bundle exec rubocop
