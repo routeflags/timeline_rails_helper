@@ -6,7 +6,10 @@ module TimelineRailsHelper
   module Helpers
     # Create a timeline_molecules tag usable with vanilla CSS.
     #
-    #   timeline_molecules_tag [{title: (DateTime.now - 3.days).strftime('%Y-%m-%d'), body: 'This is a test'}, {title: DateTime.now.strftime('%Y-%m-%d'), body: 'This is a test'}]
+    #   timeline_molecules_tag [{title: (DateTime.now - 3.days).strftime('%Y-%m-%d'),
+    #                             body: 'This is a test'},
+    #                           {title: DateTime.now.strftime('%Y-%m-%d'),
+    #                             body: 'This is a test'}]
     #   =>  "<div id=\"time_line_rails_helper\">
     #         <div class=\"entries\">
     #           <div class=\"entry\">

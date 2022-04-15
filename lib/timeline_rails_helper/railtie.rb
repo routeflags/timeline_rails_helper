@@ -8,7 +8,7 @@ module TimelineRailsHelper
           app.config.assets.paths << root.join("assets", sub).to_s
         end
       end
-      initializer 'timeline_rails_helper', group: :all do |_app|
+      initializer "timeline_rails_helper", group: :all do |_app|
         ActiveSupport.on_load(:action_controller) do
           include TimelineRailsHelper::Helpers
         end
