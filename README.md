@@ -72,7 +72,7 @@ bin/test
 
 ## Changelog
 
-TimelineRailsHelper's changelog is available [here](https://github.com/smapira/timeline_rails_helper/blob/main/CHANGELOG.md.md).
+TimelineRailsHelper's changelog is available [here](https://github.com/smapira/timeline_rails_helper/blob/main/CHANGELOG.md).
 
 ## Contributing
 
