@@ -42,6 +42,12 @@ $ gem install timeline_rails_helper
 
 ### QQTW (Quickest Quick-start in The West)
 
+1. Append the following line to your app/assets/application.scss:
+```css
+@import 'timeline_rails_helper'
+```
+
+2. And then append the line to your view file like below:
 ```ruby
 timeline_molecules_tag [{title: (DateTime.now - 3.days).strftime('%Y-%m-%d'),
                          body: 'This is a test'},
