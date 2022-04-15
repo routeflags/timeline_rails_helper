@@ -1,7 +1,7 @@
 # TimelineRailsHelper
 
 ![Ruby](https://img.shields.io/badge/Ruby-CC342D?style=for-the-badge&logo=ruby&logoColor=white) 
-[![Gem Version](https://badge.fury.io/rb/timeline_rails_helper.svg)](https://badge.fury.io/rb/jma) 
+[![Gem Version](https://badge.fury.io/rb/timeline_rails_helper.svg)](https://badge.fury.io/rb/timeline_rails_helper) 
 ![](https://ruby-gem-downloads-badge.herokuapp.com/timeline_rails_helper) 
 [![Ruby Style Guide](https://img.shields.io/badge/code_style-rubocop-brightgreen.svg)](https://github.com/rubocop-hq/rubocop)
 [![CircleCI](https://circleci.com/gh/smapira/timeline_rails_helper/tree/main.svg?style=svg)](https://circleci.com/gh/smapira/timeline_rails_helper/tree/main)
