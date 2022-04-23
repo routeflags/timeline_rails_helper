@@ -8,4 +8,6 @@
 <% contents = schedules.map{|x| {title: link_to(x[0].strftime('%Y-%m-%d'),
                                               schedule_path(x[2])),
                                body: x[1]} } %>
+<div id="time_line_rails_helper">
 <%= timeline_molecules_tag(contents, DateTime.now.strftime('%Y-%m-%d')).html_safe %>
+</div>

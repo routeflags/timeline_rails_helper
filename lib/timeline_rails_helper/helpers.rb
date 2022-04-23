@@ -10,8 +10,7 @@ module TimelineRailsHelper
     #                             body: 'This is a test'},
     #                           {title: DateTime.now.strftime('%Y-%m-%d'),
     #                             body: 'This is a test'}]
-    #   =>  "<div id=\"time_line_rails_helper\">
-    #         <div class=\"entries\">
+    #   =>   "<div class=\"entries\">
     #           <div class=\"entry\">
     #             <div class=\"title \">2022-04-13</div>
     #             <div class=\"body\">This is a test</div>
@@ -20,8 +19,7 @@ module TimelineRailsHelper
     #             <div class=\"title \">2022-04-16</div>
     #             <div class=\"body\">This is a test</div>
     #           </div>
-    #         </div>
-    #       </div>"
+    #         </div>"
     #
     # Available options:
     # [:+condition+]
@@ -36,7 +34,7 @@ module TimelineRailsHelper
 
       wrap_container = ->(x) { "<div class=\"entry\">\n#{x}\n</div>" }
       content = records.map(&(wrap_tag(condition) >> wrap_container)).join("\n")
-      "<div id=\"time_line_rails_helper\">\n<div class=\"entries\">\n#{content}\n</div>\n</div>"
+      "<div class=\"entries\">\n#{content}\n</div>"
     end
 
     private

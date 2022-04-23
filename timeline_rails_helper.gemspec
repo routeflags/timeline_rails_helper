@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.version     = TimelineRailsHelper::VERSION
   spec.authors     = ["smapira"]
   spec.email       = ["25024587+smapira@users.noreply.github.com"]
-  spec.homepage    = "https://github.com/smapira/timeline_rails_helper"
+  spec.homepage    = "https://github.com/routeflags/timeline_rails_helper"
   spec.summary     = "A helper to display vertical time line series."
   spec.description = "Provides a timeline_molecules_tag helper to draw a vertical time line usable with vanilla CSS."
   spec.license = "MIT"
@@ -16,8 +16,8 @@ Gem::Specification.new do |spec|
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the "allowed_push_host"
   # to allow pushing to a single host or delete this section to allow pushing to any host.
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "https://github.com/smapira/timeline_rails_helper"
-  spec.metadata["changelog_uri"] = "https://github.com/smapira/timeline_rails_helper"
+  spec.metadata["source_code_uri"] = "https://github.com/routeflags/timeline_rails_helper"
+  spec.metadata["changelog_uri"] = "https://github.com/routeflags/timeline_rails_helper/blob/main/CHANGELOG.md"
 
   spec.files = Dir.chdir(File.expand_path(__dir__)) do
     Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
