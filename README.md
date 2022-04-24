@@ -10,7 +10,7 @@ The TimelineRailsHelper provides a timeline_molecules_tag helper to draw a verti
 
 ## See It Work
 
-![output](https://user-images.githubusercontent.com/25024587/163623635-e0b8fdab-b8dc-4bad-b795-7631931a8acc.gif)
+![TimeLineRailsHelper](https://user-images.githubusercontent.com/25024587/164968884-08021513-386d-42ee-a1df-2e748426f102.gif)
 
 ## Installation
 
